@@ -19,7 +19,7 @@ function ColorSchemesExample() {
           <div className={`'app-layout' ${theme.app} `}>
             <Navbar bg={isDarkTheme ?  "light" : "dark" } variant={isDarkTheme ?  "light" : "dark"}>
               <Container className="rounded">
-                <Navbar.Brand href="/">Anasayfa</Navbar.Brand>
+                <Navbar.Brand href="/speedcheck">Anasayfa</Navbar.Brand>
                 <Nav className="me-auto">
                   <Nav.Link exact="true" as={Link} to="/speedcheck">
                     SpeedCheck

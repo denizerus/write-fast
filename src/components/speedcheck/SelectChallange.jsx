@@ -1,20 +1,34 @@
-import React, {useContext} from 'react'
-import { ChallangeContext } from '../../contexts/ChallangeContex';
+import React, {useContext} from 'react';
+import {ChallangeContext} from '../../contexts/ChallangeContex';
 
 const SelectChallange = () => {
-    const {challanges, selected, dispatch} = useContext(ChallangeContext);
-    const challangeList = challanges.map(c => {
-        return <option key={c.id} value={c.id}>{`${c.text} | ${c.difficulty} | ${c.text.length}`}</option>
-    })
-    const selectOnChangeHandler = (e) => {
-        dispatch({type: 'SET_SELECTED', selected : Number(e.target.value)})
-        //setSelected(Number(e.target.value))
-    }
+  const {challanges, selected, dispatch} = useContext(ChallangeContext);
+  const challangeList = challanges.map((c) => {
     return (
-        <select className='form-control' name="chl" id="chl" value={selected} onChange={selectOnChangeHandler}>
-            {challangeList}
-        </select>
+      <option
+        key={c.id}
+        value={c.id}
+      >{`${c.text} | ${c.difficulty} | ${c.text.length}`}</option>
     );
-}
+  });
+  const selectOnChangeHandler = (e) => {
+    dispatch({type: 'SET_SELECTED', selected: Number(e.target.value)});
+    //setSelected(Number(e.target.value))
+  };
+  return (
+    <React.Fragment>
+      <h5 style={{marginTop: "20px", marginBottom: "20px"}}>Testini yapmak istediğiniz metni seçiniz</h5>
+      <select
+        className="form-control"
+        name="chl"
+        id="chl"
+        value={selected}
+        onChange={selectOnChangeHandler}
+      >
+        {challangeList}
+      </select>
+    </React.Fragment>
+  );
+};
 
 export default SelectChallange;

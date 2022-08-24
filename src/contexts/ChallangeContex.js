@@ -6,17 +6,17 @@ const initState = {
   challanges: [
     {
       id: 1,
-      text: 'Denizer Keskiner',
+      text: 'Dışınızda, içinizdeki güçten üstün olan hiçbir sorun yoktur.',
       difficulty: 'easy',
     },
     {
       id: 2,
-      text: 'Merve Yılmaz',
+      text: 'İyilik başarıya giden inançtır. Hiçbir şey umut ve gücen olmadan yapılamaz!',
       difficulty: 'medium',
     },
     {
       id: 3,
-      text: 'Oğuz Sudaş',
+      text: 'Kazanma isteği, başarıya ulaşma arzusu ve ulaşma arzusu. Bunlar birleşirse kişisel mükemmelliğin kapısı açılır',
       difficulty: 'hard',
     },
   ],
@@ -44,24 +44,6 @@ const ChallangeContextProvider = (props) => {
   const data = localStorage.getItem('results');
 
   const [results, setResults] = useState(data ? JSON.parse(data) : initResult);
-  //const [state, setChallanges] = useState(initState);
-
-// asagidaki fonksiyonlar ustteki stateden geliyordu
-
-
-  // const addChallange = (challange) => {
-  //   let id = state.index;
-  //   const newChallange = {...challange, id};
-  //   setChallanges({
-  //     ...state,
-  //     challanges: [...state.challanges, newChallange],
-  //     index: id + 1,
-  //   });
-  // };
-
-  // const setSelected = (id) => {
-  //   setChallanges({...state, selected: id});
-  // };
 
   useEffect(() => {
     localStorage.setItem('challanges', JSON.stringify(state));

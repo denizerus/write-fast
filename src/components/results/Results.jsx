@@ -34,7 +34,7 @@ export const Results = () => {
               <th>Metin ID</th>
               <th>Doğruluk</th>
               <th>Süre</th>
-              <th>DBK</th>
+              <th>Dakika Başına Kelime</th>
             </tr>
           </thead>
           <tbody>{resultRows}</tbody>

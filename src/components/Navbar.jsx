@@ -19,11 +19,8 @@ function ColorSchemesExample() {
           <div className={`'app-layout' ${theme.app} `}>
             <Navbar bg={isDarkTheme ?  "light" : "dark" } variant={isDarkTheme ?  "light" : "dark"}>
               <Container className="rounded">
-                <Navbar.Brand href="/speedcheck">Anasayfa</Navbar.Brand>
+                <Navbar.Brand href="/">SpeedCheck</Navbar.Brand>
                 <Nav className="me-auto">
-                  <Nav.Link exact="true" as={Link} to="/speedcheck">
-                    SpeedCheck
-                  </Nav.Link>
                   <Nav.Link exact="true" as={Link} to="/results">
                     Results
                   </Nav.Link>
@@ -36,8 +33,7 @@ function ColorSchemesExample() {
             </Navbar>
             <div>
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/speedcheck" element={<SpeedCheck />} />
+                <Route path="/" element={<SpeedCheck />} />
                 <Route path="/results" element={<Results />} />
                 <Route path="/challanges" element={<Challanges />} />
               </Routes>

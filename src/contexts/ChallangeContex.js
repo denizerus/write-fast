@@ -11,7 +11,7 @@ const initState = {
     },
     {
       id: 2,
-      text: 'İyilik başarıya giden inançtır. Hiçbir şey umut ve gücen olmadan yapılamaz!',
+      text: 'İyilik başarıya giden inançtır. Hiçbir şey umut ve güven olmadan yapılamaz!',
       difficulty: 'medium',
     },
     {
@@ -30,7 +30,7 @@ const initResult = [
     scores: {
       duration: 2.5,
       accuracy: 83,
-      wordsPerMinute: 69,
+      wordsPerMinute: 60,
     },
   },
 ];

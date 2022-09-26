@@ -9,14 +9,16 @@ const initState = {
     navbar: 'navbar-light bg-warning',
     toggleButton: "btn-outline-dark",
     card : "bg-open-gray border-warning text-white",
-    table: "table-dark"
+    table: "table-dark",
+    h5: "white"
   },
   light: {
     app: 'bg-light',
     navbar: 'navbar-dark bg-dark',
     toggleButton: "btn-outline-light border-info",
     card : "bg-light border-info",
-    table: "table-light"
+    table: "table-light",
+    h5: "black"
   },
 };
 

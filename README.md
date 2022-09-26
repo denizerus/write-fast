@@ -13,4 +13,4 @@ This project is testing your typing skills.
 
 Denizer Keskiner
 
-![HepsiSurada](https://i.im.ge/2022/09/26/1NugjT.Type-Test.jpg)
+![TypeTest](https://i.im.ge/2022/09/26/1N1Sdf.Type-Test.jpg)
